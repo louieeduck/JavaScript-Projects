@@ -12,6 +12,7 @@ function countdown() {
     tick();
 }
 
+
 var slideIndex = 1;
 showSlides(slideIndex);  // create variable
 
@@ -25,13 +26,15 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementById("mySlides");
-    var dots = document.getElementById("dot");
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}  
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].className = dot[i].className.replace(" active", "");   // Function to create the movement of the slides
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    // slides[slideIndex-1].style.display = "block";
+    // dots[slideIndex-1].className += " active";
 }
+
+
