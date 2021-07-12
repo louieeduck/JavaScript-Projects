@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-        <script src="JS/main.js"></script>
         
 	</head>
 	<body>
@@ -22,14 +21,6 @@
 
         <p id="pi"></p>
 
-        <script>
-                function pifunc() {
-                        return Math.PI;
-                }
-
-                document.getElementById("pi").innerHTML = pifunc();
-        </script>
-
         <p id="EvanObject"></p>
 
         <p id="demo"></p>
@@ -37,7 +28,15 @@
         <p id="demo2"></p>
 
         
+        <script>
+                function pifunc() {
+                        return Math.PI;
+                }
 
+                document.getElementById("pi").innerHTML = pifunc();
+        </script>
+        
+        <script src="JS/main.js"></script>
 
 	</body>
 </html>
