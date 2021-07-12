@@ -32,8 +32,6 @@ function constantfunc() {
     document.getElementById("constant").innerHTML = e;    // make e variable constant
 }
 
-let x = 100;
-    document.write(x);  //display 100
 
 function pifunc() {  // display pi
     return Math.PI;
@@ -63,7 +61,6 @@ document.getElementById("demo").innerHTML = text;
 let text2 = "";
 for (let i = 0; i < 15; i++) {
   if (i === 5) { continue; }
-  text += "The number is " + i + "<br>";    // skip step 5 in loop
+  text2 += "The number is " + i + "<br>";    // skip step 5 in loop
 }
 document.getElementById("demo2").innerHTML = text2;
-
